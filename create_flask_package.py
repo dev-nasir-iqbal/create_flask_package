@@ -10,6 +10,8 @@ def create_package(package_name):
     os.makedirs(os.path.join(package_dir, 'templates'))
     os.makedirs(os.path.join(package_dir, 'routes'))
     open(os.path.join(package_dir, '__init__.py'), 'a').close()
+    open(os.path.join(package_dir, 'templates', 'login.html'), 'a').close()
+    open(os.path.join(package_dir, 'templates', 'signup.html'), 'a').close()
     open(os.path.join(package_dir, 'routes', 'test.py'), 'a').close()
     open(os.path.join(package_dir, 'db_queries.py'), 'a').close()
     open(os.path.join(package_dir, 'models.py'), 'a').close()
